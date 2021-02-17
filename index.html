@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire</title>
 </head>
 <body>
     <form action="action.php" method="POST">
         <h1>Fiche d'heures</h1>
-        <input type="text">Nom</input>
-        <input type="text">Prénom</input>
-        <input type="text">Plaque</input>
-        <input type="text">Matricule</input>
-        <select>
+        <p>Nom<input type="text" name="lastname"></p>
+        <p>Prénom<input type="text" name="name"></p>
+        <p>Plaque<input type="text" name="plaque"></p>
+        <p>Matricule<input type="text" name="matricule"></p>
+        <p>Agence<select name="agence">
             <option>Cournon</option>
             <option>Lyon</option>
             <option>Orléans</option>
-        </select>
-        <input type="text">Qualitification</input>
+        </select></p>
+        <p>Qualitification<input type="text" name="qualification"></p>
         <h2>Matinée</h2>
         <h3>Début</h3>
-        <input type="time">
+        <input type="time" id="startday" name="startday">
         <h3>Fin</h3>
-        <input type="time"> 
+        <input type="time" id="endday" name="endday"> 
         <h2>Après Midi</h2>
         <h3>Début</h3>
-        <input type="time">
+        <input type="time" id="startnoon" name="startnoon">
         <h3>Fin</h3>
-        <input type="time">
-        <h3></h3>
-        <input type="checkbox">Panier</input>
+        <input type="time" id="endnoon" name="endnoon">
+        <p>Panier<input type="checkbox" name="panier" value="oui"></p>
+        <p>Astreinte<input type="checkbox" name="astreinte" value="oui"></p>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
     </form>
 </body>
 </html>
